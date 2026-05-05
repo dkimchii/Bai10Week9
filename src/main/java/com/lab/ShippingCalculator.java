@@ -2,7 +2,7 @@ package com.lab;
 
 public class ShippingCalculator {
 
-    public double calculate(double weight, String type) {
+    public double tinhtien(double weight, String type) {
         if (weight <= 0) {
             throw new IllegalArgumentException("Weight must be positive");
         }
