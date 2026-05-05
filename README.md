@@ -13,3 +13,9 @@
 - trên git: Caused by: java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "type" is null
   at com.lab.ShippingCalculator.calculate(ShippingCalculator.java:9)
 - nguyên nhân: Nếu tham số type truyền vào là null (hoặc trong trường hợp kiểm thử giá trị đầu vào không hợp lệ nhưng tham số type bị để trống/null), lệnh type.equals() sẽ không thể thực thi và văng ra ngoại lệ NullPointerException
+4. 
+- lỗi tự nghĩ: sửa calculate thành tinhtien
+- git: Error:  /home/runner/work/Bai10Week9/Bai10Week9/src/test/java/com/lab/ShippingCalculatorTest.java:[17,35] cannot find symbol
+  symbol:   method calculate(int,java.lang.String)
+  location: variable calc of type com.lab.ShippingCalculator
+- nguyên nhân: file test ko tìm thấy phương thức tương ứng
